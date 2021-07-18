@@ -14,6 +14,7 @@ html {
 }
 
 #header {
+    z-index: 1;
     height: 46px;
     position: fixed;
     top: 0;
@@ -101,10 +102,37 @@ html {
 }
 
 #slider {
-    min-height: 500px;
+    position: relative;
     margin-top: 46px;
-    background-color: #333;
+    /* 50% Chiều ngang của chính nó */
+    padding-top: 50%; 
+    /* background: url() top center / cover no-repeat; */
+    background-image: 
+        linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8)),  
+        url('/assets/img/slider/slider2.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+#slider .text-content {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+#slider .text-heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .text-description {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
 
 #content {
     height: 1000px;
