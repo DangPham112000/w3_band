@@ -9,6 +9,11 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Cách 2: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
+.clear {
+    clear: both;
+}
+
 #main {
 
 }
@@ -105,7 +110,7 @@ html {
     position: relative;
     margin-top: 46px;
     /* 50% Chiều ngang của chính nó */
-    padding-top: 50%; 
+    padding-top: 50%;
     /* background: url() top center / cover no-repeat; */
     background-image: 
         linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8)),  
@@ -169,6 +174,48 @@ html {
     /* 1.4 đối với tiếng Anh, 1.6 đối với tiếng Việt */
     line-height: 1.4;
 }
+
+#content .members-list {
+    margin-top: 47px;
+    /* Cách 1: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
+    /* overflow: hidden; */
+}
+
+#content .member-item {
+    float: left;
+    width: 33.3333%;
+    height: 100%;
+    text-align: center;
+}
+
+#content .member-name {
+    font-size: 15px;
+}
+
+#content .member-img {
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 154px;
+    height: 154px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 4px;
+}
+
+#content .img1 {
+    background-image: url('/assets/img/band/member1.jpg');
+}
+
+#content .member-img.img2 {
+    background-image: url('/assets/img/band/member2.jpg');
+}
+
+#content .member-img.img3 {
+    background-image: url('/assets/img/band/member3.jpg');
+}
+
 
 #footer {
 
