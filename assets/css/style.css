@@ -256,6 +256,77 @@ html {
     background-color: #000;
 }
 
+/* Places */
+.places-list {
+    margin: 32px -8px 48px;
+}
+
+.place-item {
+    float: left;
+    width: 33.3333%;
+    padding: 0 8px;
+}
+
+.place-img {
+    width: 100%;
+    padding-top: 75%;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.place-img.img1 {
+    background-image: url(/assets/img/place/place1.jpg);
+}
+
+.place-img.img2 {
+    background-image: url(/assets/img/place/place2.jpg);
+}
+
+.place-img.img3 {
+    background-image: url(/assets/img/place/place3.jpg);
+}
+
+
+.place-img:hover {
+    opacity: 0.6;
+}
+
+.place-body {
+    background-color: #fff;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.place-time {
+    margin-top: 15px;
+    color: #757575;
+}
+
+.place-desc {
+    margin-top: 15px;
+    line-height: 1.4;
+}
+
+.place-buy-btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 11px 19px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+}
+
+.place-buy-btn:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
 #footer {
 
 }
