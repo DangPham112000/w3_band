@@ -9,6 +9,7 @@ html {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* Common */
 /* Cách 2: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
 .clear {
     clear: both;
@@ -18,6 +19,30 @@ html {
     color: #fff !important;
 }
 
+.text-center {
+    text-align: center !important;
+}
+
+.row {
+    margin-right: -8px;
+    margin-left: -8px;
+}
+
+.col {
+    float: left;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.col-3 {
+    width: 33.3333%;
+}
+
+.col-2 {
+    width: 50%;
+}
+
+/* Main */
 #main {
 
 }
@@ -181,15 +206,9 @@ html {
 
 #content .members-list {
     margin-top: 47px;
+    margin-bottom: 48px;
     /* Cách 1: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
     /* overflow: hidden; */
-}
-
-#content .member-item {
-    float: left;
-    width: 33.3333%;
-    height: 100%;
-    text-align: center;
 }
 
 #content .member-name {
@@ -200,8 +219,8 @@ html {
     margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
-    width: 154px;
-    height: 154px;
+    width: 156px;
+    height: 160px;
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -258,13 +277,8 @@ html {
 
 /* Places */
 .places-list {
-    margin: 32px -8px 48px;
-}
-
-.place-item {
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
+    margin-top: 32px;
+    margin-bottom: 48px;
 }
 
 .place-img {
