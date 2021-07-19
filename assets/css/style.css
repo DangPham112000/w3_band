@@ -23,12 +23,32 @@ html {
     text-align: center !important;
 }
 
+.pull-right {
+    float: right !important;
+}
+
 .mt-8 {
     margin-top: 8px !important;
 }
 
 .mt-16 {
     margin-top: 16px !important;
+}
+
+.btn {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 11px 19px;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #ccc;
 }
 
 .row {
@@ -192,7 +212,7 @@ html {
 
 #content .content-section {
     width: 800px;
-    padding: 64px 0;
+    padding: 64px 0 112px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -225,7 +245,6 @@ html {
 
 #content .members-list {
     margin-top: 47px;
-    margin-bottom: 48px;
     /* Cách 1: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
     /* overflow: hidden; */
 }
@@ -297,7 +316,6 @@ html {
 /* Places */
 .places-list {
     margin-top: 32px;
-    margin-bottom: 48px;
 }
 
 .place-img {
@@ -346,20 +364,6 @@ html {
     line-height: 1.4;
 }
 
-.place-buy-btn {
-    margin-top: 15px;
-    display: inline-block;
-    padding: 11px 19px;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-}
-
-.place-buy-btn:hover {
-    color: #000;
-    background-color: #ccc;
-}
-
 /* Contact form */
 .contact-content {
     margin-top: 47px;
@@ -386,14 +390,41 @@ html {
     width: 100%;
 }
 
-.contact-form .form-submit-btn {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #000;
-    padding: 10px 16px;
-    float: right;
+/* Map */
+.map-section .img {
+    width: 100%;
+    background-image: url("/assets/img/map.jpg");
+    background-size: cover;
+    background-position: top center;
+    padding-top: 56%;
 }
 
 #footer {
-
+    padding: 64px 16px;
+    text-align: center;
 }
+
+#footer .socials-list {
+    font-size: 24px;
+}
+
+#footer .socials-list a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#footer .copyright a:hover,
+#footer .socials-list a:hover {
+    opacity: 0.6;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.6);    
+}
+
+#footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);  
+}
+
+/* Map & footer CSS */
