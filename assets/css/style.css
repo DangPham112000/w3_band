@@ -159,6 +159,13 @@ html {
     background-color: #ccc;
 }
 
+#header .mobile-menu-btn {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
 #header .mobile-menu-btn,
 #header .search-btn {
     float: right;
@@ -175,7 +182,7 @@ html {
     background-color: #ccc;
 }
 
-#header .mobile-menu-btn:hover .menu-icon{
+#header .mobile-menu-btn:hover .menu-icon {
     color: #000;
 }
 
