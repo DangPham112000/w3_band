@@ -266,7 +266,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 47px;
+    margin-top: 32px;
     /* Cách 1: Khắc phục khi dùng float (thẻ cha tự động co về height 0) */
     /* overflow: hidden; */
 }
@@ -276,7 +276,7 @@ html {
 }
 
 #content .member-img {
-    margin-top: 15px;
+    margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
     width: 156px;
@@ -337,7 +337,7 @@ html {
 
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
 }
 
 .place-img {
