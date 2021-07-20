@@ -36,6 +36,10 @@ html {
     margin-top: 16px !important;
 }
 
+.mt-32 {
+    margin-top: 32px !important;
+}
+
 .btn {
     margin-top: 15px;
     display: inline-block;
@@ -44,6 +48,7 @@ html {
     color: #fff;
     text-decoration: none;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -276,7 +281,7 @@ html {
 }
 
 #content .member-img {
-    margin-top: 10px;
+    margin-top: 15px;
     margin-right: auto;
     margin-left: auto;
     width: 156px;
