@@ -88,13 +88,13 @@ html {
 }
 
 #header {
-    z-index: 1;
     height: 46px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     background-color: #000;
+    z-index: 1;
 }
 
 #nav {
