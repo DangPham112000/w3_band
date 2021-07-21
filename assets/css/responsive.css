@@ -28,7 +28,7 @@
     }
 
     #footer .socials-list {
-        font-size: 40px;
+        font-size: 32px;
     } 
 
     #footer .socials-list a {
@@ -94,6 +94,7 @@
     /* Độ rộng của nút phải từ 42 -> 48px mới dễ cho người dùng thao tác trên đt */
     #nav .subnav a {
         color: #fff;
+        padding: 5px 32px;
     }
 
     #content .member-img {

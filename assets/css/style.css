@@ -49,6 +49,8 @@ html {
     text-decoration: none;
     border: none;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
@@ -424,6 +426,11 @@ html {
     padding: 10px;
     border: 1px solid #ccc;
     width: 100%;
+    font-size: 16px;
+}
+
+.contact-submit-btn {
+    font-size: 16px;
 }
 
 /* Map */
