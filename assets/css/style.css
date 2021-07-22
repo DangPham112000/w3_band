@@ -434,7 +434,7 @@ html {
     font-size: 16px;
 }
 
-/* Map */
+/* Map & footer CSS */
 .map-section .img {
     width: 100%;
     background-image: url("../img/map.jpg");
@@ -471,4 +471,101 @@ html {
     color: rgba(0, 0, 0, 0.6);  
 }
 
-/* Map & footer CSS */
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-container {
+    position: relative;
+    background-color: #fff;
+    width: 900px;
+    max-width: calc(100% - 32px);
+    min-height: 300px;
+}
+
+.modal-header {
+    background-color: #009688;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.modal-header i {
+    margin-right: 12px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    padding: 16px;
+}
+
+.modal-close:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 0 16px;
+    margin-top: 15px;
+}
+
+.modal-label {
+    width: 100%;
+    display: block;
+    margin-bottom: 12px;
+    margin-left: 4px;
+    font-size: 15px;
+}
+
+.modal-input {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 24px;
+}
+
+#buy-tickets {
+    width: 100%;
+    background-color: #009688;
+    padding: 12px;
+    border: none;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+#buy-tickets:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.modal-footer {
+    padding: 24px;
+    text-align: right;
+}
+
+.modal-footer a {
+    color: #2196F3;
+}
