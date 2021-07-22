@@ -97,7 +97,7 @@
                                 <h3 class="place-heading">Ho Chi Minh</h3>
                                 <p class="place-time">Mon 19 July 2021</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="s-full-width btn">Buy Tickets</a>
+                                <button class="s-full-width btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-3 s-col-full mt-16">
@@ -106,7 +106,7 @@
                                 <h3 class="place-heading">Ha Noi</h3>
                                 <p class="place-time">Mon 19 July 2021</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="s-full-width btn">Buy Tickets</a>
+                                <button class="s-full-width btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                         <div class="col col-3 s-col-full mt-16">
@@ -115,7 +115,7 @@
                                 <h3 class="place-heading">Da Lat</h3>
                                 <p class="place-time">Mon 19 July 2021</p>
                                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="s-full-width btn">Buy Tickets</a>
+                                <button class="s-full-width btn js-buy-ticket">Buy Tickets</button>
                             </div>
                         </div>
                     </div>
@@ -173,9 +173,9 @@
         </div>
     </div>
 
-    <div class="modal">
-        <div class="modal-container">
-            <div class="modal-close">
+    <div class="modal js-modal">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
             
@@ -239,6 +239,32 @@
                 }
             }
         }
+    </script>
+
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket');
+        const modalBuyTickets = document.querySelector('.js-modal'); 
+        const modalContainer = document.querySelector('.js-modal-container')
+        const closeModalBtn = modalBuyTickets.querySelector('.js-modal-close');
+
+        function showBuyTickets() {
+            modalBuyTickets.classList.add('open');
+        }
+
+        function closeBuyTickets() {
+            modalBuyTickets.classList.remove('open')
+        }
+        
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets);
+        }
+
+        closeModalBtn.addEventListener('click', closeBuyTickets);
+        modalBuyTickets.addEventListener('click', closeBuyTickets);
+
+        modalContainer.addEventListener('click', function(event) {
+            event.stopPropagation();
+        });
     </script>
 </body>
 </html>
