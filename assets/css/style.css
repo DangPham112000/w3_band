@@ -208,7 +208,7 @@ html {
     /* background: url() top center / cover no-repeat; */
     background-image: 
         linear-gradient(0, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.8)),  
-        url('/assets/img/slider/slider2.jpg');
+        url('../img/slider/slider2.jpg');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -220,6 +220,7 @@ html {
     color: #fff;
     width: 100%;
     text-align: center;
+    text-shadow: 0 0 1px #000;
 }
 
 #slider .text-heading {
@@ -295,15 +296,15 @@ html {
 }
 
 #content .member-img.img1 {
-    background-image: url('/assets/img/band/member1.jpg');
+    background-image: url('../img/band/member1.jpg');
 }
 
 #content .member-img.img2 {
-    background-image: url('/assets/img/band/member2.jpg');
+    background-image: url('../img/band/member2.jpg');
 }
 
 #content .member-img.img3 {
-    background-image: url('/assets/img/band/member3.jpg');
+    background-image: url('../img/band/member3.jpg');
 }
 
 .tickets-list {
@@ -356,15 +357,15 @@ html {
 }
 
 .place-img.img1 {
-    background-image: url(/assets/img/place/place1.jpg);
+    background-image: url(../img/place/place1.jpg);
 }
 
 .place-img.img2 {
-    background-image: url(/assets/img/place/place2.jpg);
+    background-image: url(../img/place/place2.jpg);
 }
 
 .place-img.img3 {
-    background-image: url(/assets/img/place/place3.jpg);
+    background-image: url(../img/place/place3.jpg);
 }
 
 
@@ -436,7 +437,7 @@ html {
 /* Map */
 .map-section .img {
     width: 100%;
-    background-image: url("/assets/img/map.jpg");
+    background-image: url("../img/map.jpg");
     background-size: cover;
     background-position: top center;
     padding-top: 56%;
